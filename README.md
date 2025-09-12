@@ -15,7 +15,7 @@ source /path/to/geant4-install/bin/geant4.sh
 
 2. Build this project
 
-From the project root (OpticsSimLib)
+From the project root (OpticsLibSim)
 mkdir build
 cd build
 cmake ..
@@ -36,4 +36,15 @@ Batch mode
 This exectues the macro run.mac without opening the UI
 
 
-
+Structure
+OpticsLibSim/
+├── CMakeLists.txt
+├── include/
+│   ├── DetectorConstruction.hh
+│   ├── ActionInitialization.hh
+│   └── PrimaryGeneratorAction.hh
+└── src/
+    ├── G4OpticsLibSim.cc     
+    ├── DetectorConstruction.cc
+    ├── ActionInitialization.cc
+    ├── PrimaryGeneratorAction.cc
