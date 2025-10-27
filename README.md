@@ -9,7 +9,6 @@ It is structured to be reusable as a **standalone library** or integrated into a
 ---
 
 ## 📁 Project Structure
-
 OpticsLibSim/
 ├── CMakeLists.txt
 ├── LICENSE
@@ -37,7 +36,6 @@ OpticsLibSim/
 ├── main.cc # Example simulation using the library
 ├── init_vis.mac # Visualization macro
 └── run.mac # Example run macro
-
 
 ---
 
@@ -79,6 +77,7 @@ OpticsLibSim/
 auto glass = OpticalMaterial::Get("BK7");
 auto aluminum = OpticalMaterial::Get("Aluminum");
 
+---
 
 ## ⚙️ Dependencies
 OpticsLibSim depends on:
@@ -95,13 +94,21 @@ Make sure to source your Geant4 environment before building:
 source /path/to/geant4-install/bin/geant4.sh
 
 
+---
+
 
 ## 🏗️ CMake Configuration
 
 Top-level CMakeLists.txt
 
+
+---
+
+
 ## 🚀 Demo Guide
 The demo folder provides a ready-to-run Geant4 example that uses the library.
+
+---
 
 
 ## 🧪 Building & Running
@@ -111,6 +118,9 @@ cmake ..
 make
 ./OpticsDemo
 If Qt is enabled, the Geant4 visualization window will appear showing your optical system.
+
+---
+
 
 ## 🧾 License (MIT)
 Each source file starts with:
