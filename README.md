@@ -72,13 +72,6 @@ OpticsLibSim/
 ### **4. OpticalMaterial**
 > Centralized factory for shared materials and optical constants.
 
-**Example:**
-```cpp
-auto glass = OpticalMaterial::Get("BK7");
-auto aluminum = OpticalMaterial::Get("Aluminum");
-
----
-
 
 ---
 
