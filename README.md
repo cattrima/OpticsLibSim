@@ -9,7 +9,32 @@ It is structured to be reusable as a **standalone library** or integrated into a
 ---
 
 ## 📁 Project Structure
-<pre> OpticsLibSim/ ├── CMakeLists.txt ├── LICENSE ├── include/ │ └── OpticsLib/ │ ├── OpticalMirror.hh # Generic mirror class (primary/secondary) │ ├── CorrectorPlate.hh # Optical corrector element │ ├── FocalPlaneArray.hh # Focal plane / detector surface │ └── OpticalMaterial.hh # Shared material definitions (refractive indices, etc.) ├── src/ │ ├── OpticalMirror.cc │ ├── CorrectorPlate.cc │ ├── FocalPlaneArray.cc │ └── OpticalMaterial.cc ├── data/ │ └── mirror_reflectivity.txt # Example reflectivity file (energy [eV], reflectivity) └── demo/ ├── CMakeLists.txt ├── DetectorConstruction.hh ├── DetectorConstruction.cc ├── main.cc # Example simulation using the library ├── init_vis.mac # Visualization macro └── run.mac # Example run macro </pre>
+<pre>
+OpticsLibSim/
+├── CMakeLists.txt
+├── LICENSE
+├── include/
+│   └── OpticsLib/
+│       ├── OpticalMirror.hh        # Generic mirror class (primary/secondary)
+│       ├── CorrectorPlate.hh       # Optical corrector element
+│       ├── FocalPlaneArray.hh      # Focal plane / detector surface
+│       └── OpticalMaterial.hh      # Shared material definitions (refractive indices, etc.)
+├── src/
+│   ├── OpticalMirror.cc
+│   ├── CorrectorPlate.cc
+│   ├── FocalPlaneArray.cc
+│   └── OpticalMaterial.cc
+├── data/
+│   └── mirror_reflectivity.txt    # Example reflectivity file (energy [eV], reflectivity)
+└── demo/
+    ├── CMakeLists.txt
+    ├── DetectorConstruction.hh
+    ├── DetectorConstruction.cc
+    ├── main.cc                     # Example simulation using the library
+    ├── init_vis.mac                # Visualization macro
+    └── run.mac                     # Example run macro
+</pre>
+
 ---
 
 ## 🪞 Core Classes Overview
