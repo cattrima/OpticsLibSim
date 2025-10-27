@@ -79,7 +79,11 @@ auto aluminum = OpticalMaterial::Get("Aluminum");
 
 ---
 
-##  ⚙️  Dependencies
+
+---
+
+## ⚙️  Dependencies
+  
 
 OpticsLibSim depends on:
 
