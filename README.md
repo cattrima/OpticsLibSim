@@ -79,7 +79,7 @@ auto aluminum = OpticalMaterial::Get("Aluminum");
 
 ---
 
-## ⚙️ Dependencies
+##  ⚙️  Dependencies
 OpticsLibSim depends on:
 
 Geant4 (≥ 11.0)
@@ -97,7 +97,7 @@ source /path/to/geant4-install/bin/geant4.sh
 ---
 
 
-## 🏗️ CMake Configuration
+##  🏗️  CMake Configuration
 
 Top-level CMakeLists.txt
 
@@ -105,7 +105,7 @@ Top-level CMakeLists.txt
 ---
 
 
-## 🚀 Demo Guide
+##  🚀  Demo Guide
 The demo folder provides a ready-to-run Geant4 example that uses the library.
 
 ---
@@ -122,7 +122,7 @@ If Qt is enabled, the Geant4 visualization window will appear showing your optic
 ---
 
 
-## 🧾 License (MIT)
+##  🧾  License (MIT)
 Each source file starts with:
 // OpticsLibSim - Optical Simulation Library for Geant4
 // Copyright (c) 2025 Caterina
