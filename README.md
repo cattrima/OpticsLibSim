@@ -19,13 +19,13 @@ OpticsLibSim/
 │ ├── OpticalMirror.hh # Generic mirror class (primary/secondary)
 │ ├── CorrectorPlate.hh # Optical corrector element
 │ ├── FocalPlaneArray.hh # Focal plane / detector surface
-│ ├── OpticalMaterial.hh # Shared material definitions (refractive indices, etc.)
+│ └── OpticalMaterial.hh # Shared material definitions (refractive indices, etc.)
 │
 ├── src/
 │ ├── OpticalMirror.cc
 │ ├── CorrectorPlate.cc
 │ ├── FocalPlaneArray.cc
-│ ├── OpticalMaterial.cc
+│ └── OpticalMaterial.cc
 │
 ├── data/
 │ └── mirror_reflectivity.txt # Example reflectivity file (energy [eV], reflectivity)
