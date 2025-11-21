@@ -1,0 +1,47 @@
+# -------------------------
+#   PRIMARY MIRROR (M1)
+# -------------------------
+[M1]
+radius = 222.
+thickness = 28.0
+nn_ring = 100
+nn_ring_start = 60
+
+# M1 Profile constants
+c = -0.0008286
+k = 0.0
+alpha_4 = 2.69202e-10
+alpha_6 = -1.13928e-15
+
+
+# -------------------------
+#   SECONDARY MIRROR (M2)
+# -------------------------
+[M2]
+radius =  100.63500
+thickness = 25.0
+nn_ring = 100
+
+# M2 Profile constants
+c = -0.001597
+k = 0.0
+alpha_4 = 1.96496e-8
+alpha_6 = -2.78927e-12
+alpha_8 = 1.92258e-16
+alpha_10 = -4.9277e-21
+
+
+# -------------------------
+#          LENS
+# -------------------------
+[Lens]
+radius = 353.167
+thickness = 28.0
+
+
+# -------------------------
+#       DISTANCES
+# -------------------------
+[Distances]
+M1_to_FPA = 145.0
+M2_to_FocalPlane = 255.
