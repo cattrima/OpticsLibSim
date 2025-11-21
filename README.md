@@ -1,6 +1,6 @@
 # 🌌 OpticsLibSim — Geant4 Optical Simulation Library
 
-**Author:** Caterina  
+**Author:** Caterina Trimarelli
 **License:** MIT  
 **Description:**  
 OpticsLibSim is a modular **optical component library** for **Geant4**, designed to let users easily add and configure optical elements such as mirrors, corrector plates, and focal plane arrays (FPA).  
@@ -19,6 +19,7 @@ OpticsLibSim/
 │       ├── CorrectorPlate.hh       # Optical corrector element
 │       ├── FocalPlaneArray.hh      # Focal plane / detector surface
 │       └── OpticalMaterial.hh      # Shared material definitions (refractive indices, etc.)
+│       └── OpticalComponent.hh     # 
 ├── src/
 │   ├── OpticalMirror.cc
 │   ├── CorrectorPlate.cc
@@ -117,7 +118,7 @@ The demo folder provides a ready-to-run Geant4 example that uses the library.
 mkdir build && cd build
 cmake ..
 make
-./OpticsDemo
+./demo/OpticsDemo
 If Qt is enabled, the Geant4 visualization window will appear showing your optical system.
 
 ---
