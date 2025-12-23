@@ -3,7 +3,7 @@
 ## 🎄 OpticsLibSim - Holiday Update - First Release 🎄
 
 The first release of OpticsLibSim is expected in January 2026. This initial version will include two optical configurations.
-
+![Optical Simulation](optics.gif)
 
 **Author:** Caterina Trimarelli
 **License:** MIT  
