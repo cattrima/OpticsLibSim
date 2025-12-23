@@ -1,6 +1,6 @@
 # 🌌 OpticsLibSim — Geant4 Optical Simulation Library
 
-🎄 OpticsLibSim - Holiday Update 🎄
+## 🎄 OpticsLibSim - Holiday Update - First Release 🎄
 
 The first release of OpticsLibSim is expected in 2026. This initial version will include two optical configurations.
 
