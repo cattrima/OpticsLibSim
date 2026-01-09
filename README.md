@@ -9,9 +9,7 @@ The first release of OpticsLibSim is expected in January 2026. This initial vers
 **Description:**  
 OpticsLibSim is a modular **optical component library** for **Geant4**, designed to let users easily add and configure optical elements such as mirrors, corrector plates, and focal plane arrays (FPA).  
 It is structured to be reusable as a **standalone library** or integrated into any Geant4-based telescope or detector simulation.
-User Guide and first application "OpticsLibSim: A Modular and Lightweight Optical Library for Geant4" soon in arxiv.
-
-The initial version of the code was developed for the Terzina Cherenkov Telescope (first version October-December 2023), with collaboration and scientific guidance from Leonid Burmistrov.
+User Guide and first application "OpticsLibSim: A Modular and Lightweight Optical Library for Geant4" soon in arxiv. The initial version of the code was developed for the Terzina Cherenkov Telescope (first version October-December 2023), with collaboration and scientific guidance from Leonid Burmistrov.
 https://arxiv.org/abs/2510.02844 
 ---
 
