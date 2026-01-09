@@ -10,7 +10,7 @@ The first release of OpticsLibSim is expected in January 2026. This initial vers
 **Description:**  
 OpticsLibSim is a modular **optical component library** for **Geant4**, designed to let users easily add and configure optical elements such as mirrors, corrector plates, and focal plane arrays (FPA).  
 It is structured to be reusable as a **standalone library** or integrated into any Geant4-based telescope or detector simulation.
-
+The initial version of the code was developed for the Terzina Cherenkov Telescope (first version October-December 2023), with collaboration and scientific guidance from Leonid Burmistrov.
 ---
 
 ## 📁 Project Structure
@@ -20,22 +20,31 @@ OpticsLibSim/
 ├── LICENSE
 ├── include/
 │   └── OpticsLib/
-│       ├── OpticalMirror.hh        # Generic mirror class (primary/secondary)
-│       ├── CorrectorPlate.hh       # Optical corrector element
-│       ├── FocalPlaneArray.hh      # Focal plane / detector surface
+│       ├── OpticalMirror.hh        # Generic mirror class (primary/secondary)       #follow the beginning for other modules
+│       ├── CorrectorPlate.hh       # Optical corrector element    //currently not used 
+│       ├── FocalPlaneArray.hh      # Focal plane / detector surface   
 │       └── OpticalMaterial.hh      # Shared material definitions (refractive indices, etc.)
 │       └── OpticalComponent.hh     # 
 ├── src/
-│   ├── OpticalMirror.cc
+│   ├── OpticalMirror.cc             
 │   ├── CorrectorPlate.cc
 │   ├── FocalPlaneArray.cc
-│   └── OpticalMaterial.cc
-├── data/
-│   └── mirror_reflectivity.txt    # Example reflectivity file (energy [eV], reflectivity)
+├── config/
+|   ├──optics_config.txt
+|   |──data/
+│	└── mirror_reflectivity.txt    # Example reflectivity file (energy [eV], reflectivity)
+│   	└── corrector_lens_refractive_index.dat    # Example refraction for corrector lens quartz file (energy [eV], refraction)
+│       └── corrector_lens_absorption.dat    # Example absorption for corrector lens quartz file (energy [eV], absorption)
 └── demo/
     ├── CMakeLists.txt
     ├── DetectorConstruction.hh
     ├── DetectorConstruction.cc
+    ├── PrimaryGeneratorAction.hh
+    ├── PrimaryGeneratorAction.cc
+    ├── SteppingAction.hh
+    ├── SteppingAction.cc
+    ├── FPA_SD.cc                   #not used useful for output
+    ├── FPA_SD.hh		    #not used useful for output
     ├── main.cc                     # Example simulation using the library
     ├── init_vis.mac                # Visualization macro
     └── run.mac                     # Example run macro
@@ -46,7 +55,7 @@ OpticsLibSim/
 ## 🪞 Core Classes Overview
 
 ### **1. OpticalMirror**
-> Generic optical mirror used for **primary**, **secondary**, or **tertiary** reflectors.
+> Generic optical mirror used for **primary**, **secondary** reflectors.
 
 **Key features:**
 - Configurable reflectivity (constant or from file)
@@ -132,6 +141,6 @@ If Qt is enabled, the Geant4 visualization window will appear showing your optic
 ##  🧾  License (MIT)
 Each source file starts with:
 // OpticsLibSim - Optical Simulation Library for Geant4
-// Copyright (c) 2025 Caterina
+// Copyright (c) 2025 Caterina Trimarelli
 // Licensed under the MIT License (see LICENSE file in the project root)
 And the LICENSE file contains the full MIT text.

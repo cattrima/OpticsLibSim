@@ -1,3 +1,6 @@
+// OpticsLibSim - Optical Simulation Library for Geant4
+// Copyright (c) 2025 Caterina Trimarelli
+// Licensed under the MIT License (see LICENSE file in the project root)
 // SPDX-License-Identifier: MIT
 #include "OpticsLib/FocalPlaneArray.hh"
 #include "G4Box.hh"

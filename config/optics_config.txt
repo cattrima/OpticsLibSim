@@ -5,7 +5,7 @@
 radius = 222.
 thickness = 28.0
 nn_ring = 100
-nn_ring_start = 60
+nn_ring_start = 50
 
 # M1 Profile constants
 c = -0.0008286
